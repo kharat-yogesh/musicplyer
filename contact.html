@@ -1,0 +1,163 @@
+  <!-- Develop by  Mangesh Badaahe Teem A11 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Player Feedback</title>
+    <link rel="stylesheet" href="feedback1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #413e3e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.contact-page{ 
+    background-color: #fff;
+    padding: 50 20 20 20px;
+    border-radius: 10px;
+    box-shadow:20px 10px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    height: 90vh;
+    border: 3px solid #007bff;
+}
+  .contact-page h2{
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 2%;
+}  
+.form{
+    margin-bottom: 15px;
+    margin-left: 4%;
+}
+
+/*input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}*/
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: purple;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.form-inline{
+    display: flex;
+    justify-content: space-between;
+}
+.form-inline .form{
+    flex: 1;
+    margin-right: 10px;
+}
+.form input,
+.form select,
+.form textarea{
+    width: 90%;
+    padding: 10px;
+    border: 2px solid black;
+    font-size:14px;
+    border-radius: 10px;
+    background: purple;
+    color: #fff;
+}
+.form ::placeholder{
+    font-size: 13px;
+    color: white;
+}
+.form select{
+    color: white;
+}
+.submit-btn{
+    width: 35%;
+    height: 50px;
+    margin-left: 60%;
+    margin-top: 10px;
+    border-radius: 40px;
+    border: 2px solid red;
+    font-size: 15px;
+}
+.contact a { 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    width: 35%;
+    height: 50px;
+    border-radius: 40px;
+    margin-left: 70%;
+    margin: -50px 10px 40%;
+    border: 2px solid rgb(250, 6, 6);
+    background-color: purple;
+    font-size: 15px;
+    align-items: center;
+}
+.contact a:hover {
+    background-color: #45a049;
+}
+    </style>
+</head>
+<body>
+<div class="contact-page">
+    <h2> Contact Page</h2>
+    <form action="#" method="POST">
+        <div class="form">
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name" placeholder="User Name" required></div>
+            <div class="form">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="User Email" required></div>
+            <div class="form">
+            <label for="phone">Phone No :</label>
+            <input type="tel" id="phone" name="phone" placeholder="User phone No" required></div>
+            <div class="form-inline">
+            <div class="form">
+            <label for="gender">Gender :</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option></select></div>
+            <div class="form">
+            <label for="language">Language :</label>
+            <select name="language" id="language" required>
+                <option value="marathi">Marathi</option>
+                <option value="hindi">Hindi</option>
+                <option value="english">English</option>
+            </select>
+            </div></div>
+            <div class="form">
+                <label for="coment">Comment :</label>
+                <textarea name="comment" id="comment" rows="2" placeholder="Massage Box" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+    
+<div class="contact">
+    <a href="feedback.html" type="btn">Back</a>
+  </div>
+</form>  
+</div>
+  
+</body>
+</html>

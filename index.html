@@ -1,0 +1,105 @@
+ <!-- Develop by Sakshi Shinde Teem A11 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player Interface</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="project-name"> <span>Rhythm wave</span></div>
+            <div class="content-grid">
+                <!-- Left Section -->
+                <div class="left-section">
+                    <div class="circle-div">
+                        <img id="album-art"
+                            src="https://t3.ftcdn.net/jpg/06/05/37/40/240_F_605374009_hEUHatmKPzuHTIacg7rLneAgnLHUgegM.jpg"
+                            alt="Album Art">
+                    </div>
+                    <div class="controls-panel">
+                        <div class="slider-container">
+                            <button class="volume-btn" id="volume-down-btn"><i class="fa fa-volume-down"></i></button>
+                            <input id="volume-slider" type="range" class="slider" min="0" max="1" step="0.01">
+                            <button class="volume-btn" id="volume-up-btn"><i class="fa fa-volume-up"></i></button>
+                        </div>
+                        <div class="control-buttons">
+                            <button class="shuffle-btn" id="shuffle-btn"><i class="fa fa-random"></i></button>
+                            <button class="control-btn" id="prev-btn"><i class="fa fa-fast-backward"></i></button>
+                            <button class="control-btn" id="play-pause-btn"><i style="font-size: 26px;"
+                                    class="fa fa-play-circle"></i></button>
+                            <button class="control-btn" id="next-btn"><i class="fa fa-fast-forward"></i></button>
+                            <button class="loop-btn" id="loop-btn"><i class="fa fa-repeat"></i></button>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar"></div>
+                        </div>
+                        <div class="time-display">
+                            <span id="current-time">0:00</span>
+                            <span id="duration">0:00</span>
+                        </div>
+                    </div>
+                    <div id="icon-mange" style="height: 33px; width:100%; background-color: aliceblue;">
+                        <button class="control-btn" id="like-btn"><i style="font-size: 17px;"
+                                class="fa fa-heart"></i></button>
+                        <button class="control-btn" id="delete-btn"><i style="font-size: 17px;"
+                                class="fa fa-trash"></i></button>
+                        <button class="control-btn" id="share-btn"><i style="font-size: 17px;"
+                                class="fa fa-share"></i></button>
+                        <button class="control-btn" id="more-btn"><i style="font-size: 17px;"
+                                class="fa fa-ellipsis-h"></i></button>
+                        <div class="share-options" id="share-options">
+                            <a href="https//Facebook.com" id="facebook-share">Facebook</a>
+                            <a href="#" id="instagram-share">Instagram</a>
+                            <a href="#" id="whatsapp-share">WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Middle Section -->
+                <div class="playlist-section">
+                    <div class="playlist-header">
+                        <span>Playlist</span>
+                        <div class="search-icon">
+                            <input class="playlist-input1" id="search-input" type="search" placeholder="Search">
+                            <i class="fa fa-search" style="color: black;"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-inputs">
+                        <input type="file" id="file-input" multiple accept="audio/mp3">
+                        <ul id="playlist"></ul>
+                        <div class="playlist-line"></div>
+                    </div>
+                </div>
+
+                <!-- Right Section -->
+                <div class="right-section">
+                    <div class="music-control">
+                        <div class="control-circle">
+                            <img id="current-song-art"
+                                src="https://t3.ftcdn.net/jpg/06/05/37/40/240_F_605374009_hEUHatmKPzuHTIacg7rLneAgnLHUgegM.jpg"
+                                alt="Current Song Art">
+                        </div>
+                        <div class="music-text">
+                            <p>Listen Music</p>
+                            <p>Everyone You Want</p>
+                            <p>Listen Music Everywhere To Boost</p>
+                            <p>Your Day</p>
+                        </div>
+                        <button class="start-btn"><a href="" target="_blank">custemer suport</a></button>
+                        <button class="start-btn"><a href="getstarted" target="_blank">Let's Get Started</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
